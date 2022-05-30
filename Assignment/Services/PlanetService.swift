@@ -9,6 +9,7 @@ import UIKit
 
 protocol PlanetServiceProtocol {
     func fetchPlanets<T: Codable>(_ pageNo: Int) -> Observable<(T?, Int)>
+    func fetchPlanetImage() -> Observable<UIImage>
 }
 
 class PlanetService : PlanetServiceProtocol {
